@@ -1,5 +1,16 @@
+version: 2
 jobs:
   build:
-    machine: true
+    docker:
+      - image: debian:stretch
+
     steps:
-      - run: echo hello world
+      - checkout
+
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+
+      - run:
+          name: Print the Current Time
+          command: date
