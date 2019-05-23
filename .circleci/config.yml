@@ -1,0 +1,5 @@
+jobs:
+  build:
+    machine: true
+    steps:
+      - run: echo hello world
