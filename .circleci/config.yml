@@ -1,6 +1,6 @@
 version: 2
 jobs:
   build:
-    machine: true
+    machine: false
     steps:
       - run: echo hello world
